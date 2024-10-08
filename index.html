@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>DrivenEats.com</title>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="titulo">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+    </header>
+    <section class="menu">
+        <div class="escolha comida">
+            <h3>Primeiro, seu prato</h3>
+            <div class="cards">
+                <div onclick="selecionado1(this)" class="anuncio calabresa">
+                    <img src="projeto__driven-eats__imagens/pf_calabresa.png">
+                    <h4>Calabresa Acebolada</h4><br>
+                    <h5>Arroz, Feijao e <br>Batata</h5><br>
+                    <h6>15.90</h6>
+                </div>
+                <div onclick="selecionado1(this)" class="anuncio picanha">
+                    <img src="projeto__driven-eats__imagens/pf_carne.jpg">
+                    <h4>Picanha</h4><br>
+                    <h5>Arroz, Feijao,<br>Batata e Salada</h5><br>
+                    <h6>19.90</h6>
+                </div>
+                <div onclick="selecionado1(this)" class="anuncio frango">
+                    <img src="projeto__driven-eats__imagens/pf_frango.jpg">
+                    <h4>Frango Grelhado</h4><br>
+                    <h5>Arroz, Feijao e <br>Salada</h5><br>
+                    <h6>17.90</h6>
+                </div>
+            </div>
+        </div>
+        <div class="escolha bebida">
+            <h3>Agora, sua bebida</h3>
+            <div class="cards">
+                <div onclick="selecionado2(this)" class="anuncio coca">
+                    <img src="projeto__driven-eats__imagens/coca.png">
+                    <h4>Coca-cola</h4><br>
+                    <h5>Lata 350ml</h5><br>
+                    <h6>4.90</h6>
+                </div>
+                <div onclick="selecionado2(this)" class="anuncio fanta">
+                    <img src="projeto__driven-eats__imagens/fanta.png">
+                    <h4>Fanta Laranja</h4><br>
+                    <h5>Lata 350ml</h5><br>
+                    <h6>3.90</h6>
+                </div>
+                <div onclick="selecionado2(this)" class="anuncio suco">
+                    <img src="projeto__driven-eats__imagens/suco.png">
+                    <h4>Suco da Fruta</h4><br>
+                    <h5>500ml</h5><br>
+                    <h6>7.90</h6>
+                </div>
+            </div>
+        </div>
+        <div class="escolha sobremesa">
+            <h3>Por fim, sua sobremesa</h3>
+            <div class="cards">
+                <div onclick="selecionado3(this)" class="anuncio brownie">
+                    <img src="projeto__driven-eats__imagens/brownie.jpg">
+                    <h4>Brownie</h4><br>
+                    <h5>Chocolate</h5><br>
+                    <h6>10.90</h6>
+                </div>
+                <div onclick="selecionado3(this)" class="anuncio mousse">
+                    <img src="projeto__driven-eats__imagens/mouse.jpg">
+                    <h4>Mousse</h4><br>
+                    <h5>Maracuja</h5><br>
+                    <h6>13.90</h6>
+                </div>
+                <div onclick="selecionado3(this)" class="anuncio pudim">
+                    <img src="projeto__driven-eats__imagens/pudim.jpg">
+                    <h4>Pudim</h4><br>
+                    <h5>Leite Condensado</h5><br>
+                    <h6>11.90</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <button id="meuBotao" class="botao" disabled onclick="pagina()">
+            Selecione os 3 itens <br> para fechar o pedido
+        </button>
+    </footer>
+    <div class="container escondido">
+        <div class="confirmacao"></div>
+        <div class="contas">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
